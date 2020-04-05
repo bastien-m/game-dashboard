@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/site.css">
+    <title>Mini jeux</title>
+</head>
+<body>
+    <div class="header">
+        Mini Game Dashboard
+    </div>
+    <div class="game-container">
+        <div class="game-list">
+            <div class="game grow">
+                <div class="game-header">
+                    <img src="/assets/thegame.jpeg">
+                </div>
+                <div class="game-action">
+                    <button onclick="join('game')">Ouvrir</button>
+                </div>
+            </div>
+            <div class="game grow">
+                <div class="game-header">
+                    <img src="/assets/limite.jpg">
+                </div>
+                <div class="game-action">
+                    <button onclick="join('limite')">Ouvrir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        (function($){
+
+            $.join = function (page) {
+                if (page === 'game') {
+                    // window.location.href = ""
+                    console.log('open the game')
+                } else if (page === 'limite') {
+                    // window.location.href = ""
+                    console.log('open limite')
+                }
+            }
+
+        })(this)
+    </script>
+
+</body>
+</html>
